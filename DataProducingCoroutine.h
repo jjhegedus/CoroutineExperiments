@@ -2,12 +2,12 @@
 
 #include <experimental\coroutine>
 
-class VoidCoroutine
+class DataProducingCoroutine
 {
 public:
     struct promise_type
     {
-        VoidCoroutine get_return_object();
+        DataProducingCoroutine get_return_object();
         std::experimental::suspend_never initial_suspend();
         std::experimental::suspend_never final_suspend();
         void return_void();
