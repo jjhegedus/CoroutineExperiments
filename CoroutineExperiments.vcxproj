@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CompletableCoroutine.h" />
+    <ClInclude Include="CompletableDataProducingCoroutine.h" />
     <ClInclude Include="DataProducingCoroutine.h" />
     <ClInclude Include="IntProducingCoroutine.h" />
     <ClInclude Include="stdafx.h" />
