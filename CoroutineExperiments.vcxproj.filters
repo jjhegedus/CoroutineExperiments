@@ -27,6 +27,9 @@
     <ClInclude Include="CompletableCoroutine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IntProducingCoroutine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="DataProducingCoroutine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -44,7 +47,7 @@
     <ClCompile Include="CompletableCoroutine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DataProducingCoroutine.cpp">
+    <ClCompile Include="IntProducingCoroutine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
