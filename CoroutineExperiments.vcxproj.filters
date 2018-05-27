@@ -36,6 +36,15 @@
     <ClInclude Include="CompletableDataProducingCoroutine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ReactiveData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReactiveDataCoroutine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AwaitableDataProducingCoroutine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
