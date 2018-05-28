@@ -153,6 +153,8 @@
     <ClInclude Include="CompletableDataProducingCoroutine.h" />
     <ClInclude Include="DataProducingCoroutine.h" />
     <ClInclude Include="IntProducingCoroutine.h" />
+    <ClInclude Include="LazyData.h" />
+    <ClInclude Include="LazyDataCoroutine.h" />
     <ClInclude Include="ReactiveData.h" />
     <ClInclude Include="ReactiveDataCoroutine.h" />
     <ClInclude Include="stdafx.h" />
