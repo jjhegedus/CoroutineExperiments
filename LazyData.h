@@ -1,6 +1,7 @@
 #pragma once
 
 #include "LazyDataCoroutine.h"
+#include "AwaitableDataProducingCoroutine.h"
 
 template <typename T>
 class LazyData
@@ -19,7 +20,7 @@ public:
     }
 
     operator T() {
-        return getData();
+        return getData().get();
     }
 
     void Set(T value) {
@@ -30,7 +31,11 @@ private:
     LazyDataCoroutine<T> m_coroutine;
 
     AwaitableDataProducingCoroutine<T> getData() {
-        co_return m_coroutine;
+        T returnData = co_await m_coroutine;
+        
+        cout << "LazyData::getData: after co_await returns\n";
+
+        co_return returnData;
     }
 
 };

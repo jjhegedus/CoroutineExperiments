@@ -39,12 +39,6 @@ public:
 
     }
 
-    T get() {
-        if (m_set) {
-            return m_value;
-        }
-    }
-
     bool await_ready() {
         cout << "LazyDataCoroutine::await_ready\n";
         return m_set;
